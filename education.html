@@ -4,7 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Education | Margaret Evarts</title>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+  </script>
+
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header>
@@ -30,14 +38,14 @@
       <div class="card">
         <h3>Fingerlakes Community College (FLCC)</h3>
         <p><strong>A.S. in Engineering Science</strong></p>
-        <p><strong>Achievements</strong>: Dean’s List, Treasurer of Engineering and Technology Club, Phi Theta Kappa Honor Society</p>
-        <p><strong>Relevant coursework</strong>:  Computing for Engineers, Engineering Design, Multivariable Calculus.</p>
+        <p><strong>Achievements</strong>: Dean’s List, Treasurer of Engineering and Technology Club, Phi Theta Kappa Honor Society.</p>
+        <p><strong>Relevant coursework</strong>: Computing for Engineers, Engineering Design, Multivariable Calculus.</p>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 Margaret Evarts</p>
+    <p>© 2025 Margaret Evarts | <a href="mailto:maggie.evarts@yahoo.com">maggie.evarts@yahoo.com</a></p>
   </footer>
 </body>
 </html>
