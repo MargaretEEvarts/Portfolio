@@ -4,6 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Margaret Evarts | Resume</title>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+  </script>
+  
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
@@ -23,19 +30,29 @@
   <main>
     <section class="intro">
       <h2>Software Engineer | UI/UX Enthusiast</h2>
-      <p>
-        I’m a motivated software engineering student passionate about designing intuitive web applications, 
-        developing intelligent automation, and creating meaningful user experiences. 
-      </p>
     </section>
 
     <section class="resume">
       <h3>Summary</h3>
       <p>
-        Skilled in Python, JavaScript, React, Flask, and Tailwind CSS. Experienced with MLflow, computer vision, and API integration. 
-        Recent work includes developing a document classification model at Excellus BlueCross BlueShield and a web-based expense tracker, ExSpendo.
+        With over a year of real-world experience in full-stack software development, machine learning, and in-production systems, 
+        I specialize in building scalable, efficient applications and designing software architectures that support full-scale implementations.
+      <p>
+      <p>
+        Skilled in Python, JavaScript, React, Flask, and Tailwind CSS, I combine design thinking with engineering expertise 
+        to craft elegant solutions that are both user-friendly and robust in complex environments.
       </p>
       <a href="Margaret_Evarts_Resume.pdf" class="button" download>Download Resume (PDF)</a>
+    </section>
+
+     <section class="contact">
+      <h3>Let’s Connect</h3>
+      <p>Feel free to reach out if you'd like to collaborate or learn more about my work!</p>
+      <div class="contact-links">
+        <a href="mailto:maggie.evarts@yahoo.com" class="contact-button">Email Me</a> | 
+        <a href="https://www.linkedin.com/in/margaret-evarts" target="_blank" class="contact-button">LinkedIn</a> | 
+        <span class="contact-button">📞(585) 704-5362</span>
+      </div>
     </section>
   </main>
 

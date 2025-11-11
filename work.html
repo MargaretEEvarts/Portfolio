@@ -4,7 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Work Experience | Margaret Evarts</title>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+  </script>
+
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header>
@@ -22,7 +30,7 @@
   <main>
     <section class="work">
       <div class="card">
-        <h3>Software Engineer Intern – Excellus BlueCross BlueShield</h3>
+        <h3>Data Science Intern – Excellus BlueCross BlueShield</h3>
         <p><strong>Aug 2024 – Present</strong></p>
         <p>Developed a model with 96% accuracy to categorize claim forms and integrate text extraction pipelines with Databricks MLflow endpoints.</p>
       </div>
@@ -42,7 +50,7 @@
   </main>
 
   <footer>
-    <p>© 2025 Margaret Evarts</p>
+    <p>© 2025 Margaret Evarts | <a href="mailto:maggie.evarts@yahoo.com">maggie.evarts@yahoo.com</a></p>
   </footer>
 </body>
 </html>
